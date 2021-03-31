@@ -24,7 +24,7 @@ fxparams = [1];
     % Number of points that will be surveyed above and below the best
     % fit param val.(ie 10 yeilds 21 grid search points, including the best
     % fit val)
-grdpnts = 10; 
+grdpnt = 10; 
     % Scales and bounds the range that the grid search will cover. This is
     % done by scaling the best fit parameter value being evaluated by a
     % user designated percentage. As such: paramval+/-(divval*paramval) (Ex.
@@ -60,10 +60,6 @@ upperbound = 1E10;
 % parpool(numwork)
 tic %start run timer
  
-
-grdpnt = grdpnts/2; %Define gridpnt as how many points to the left and 
-                    %right in the error contour. grdpnt is one side while 
-                    % grdpnts is both sides. 
  
 
 % PREALLOCATION
